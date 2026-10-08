@@ -10,7 +10,6 @@
 
 /dts-v1/;
 #include "exynos7.dtsi"
-/delete-node/ &hsi2c_7;
 
 / {
 	compatible = "samsung,exynos7420", "samsung,exynos7";
@@ -57,6 +56,10 @@
         reg = <0x103>;
         enable-method = "psci";
     };
+
+&soc {
+	/delete-node/ &hsi2c_7;
+};
 
 &soc {
 	hsi2c_7: i2c@14e10000 {
