@@ -1,0 +1,15 @@
+// SPDX-License-Identifier: GPL-2.0
+/*
+ * Samsung Galaxy S6 common board device tree source
+ *
+ * Copyright (C) 2023, Paweł Chmiel <pawel.mikolaj.chmiel@gmail.com>
+ * Copyright (C) 2026, schoosh212 <superaviation001@gmail.com>
+ */
+
+#include "exynos7420-zero-common.dtsi"
+
+/ {
+	model = "Samsung S6";
+	compatible = "samsung,exynos7420-zeroflte", "samsung,exynos7420",
+			"samsung,exynos7";
+};
